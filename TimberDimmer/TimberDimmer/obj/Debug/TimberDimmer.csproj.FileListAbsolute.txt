@@ -17,3 +17,10 @@ H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\obj\
 H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\obj\Debug\TimberDimmer.csproj.CopyComplete
 H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\obj\Debug\TimberDimmer.exe
 H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\obj\Debug\TimberDimmer.pdb
+H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\bin\DesktopGL\AnyCPU\Debug\Content\bg.xnb
+H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\bin\DesktopGL\AnyCPU\Debug\Content\fire.xnb
+H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\bin\DesktopGL\AnyCPU\Debug\Content\tree.xnb
+H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\bin\DesktopGL\AnyCPU\Debug\Content\trunk.xnb
+H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\bin\DesktopGL\AnyCPU\Debug\Content\player.xnb
+H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\bin\DesktopGL\AnyCPU\Debug\Content\start.xnb
+H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\bin\DesktopGL\AnyCPU\Debug\Content\stop.xnb

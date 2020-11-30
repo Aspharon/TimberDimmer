@@ -13,9 +13,9 @@ namespace TimberDimmer
         public GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        public static readonly int zoom = 4;
-        public static readonly int renderWidth = 250;
-        public static readonly int renderHeight = 200;
+        public static readonly int zoom = 3;
+        public static readonly int renderWidth = 480;
+        public static readonly int renderHeight = 320;
 
         private static readonly int windowWidth = renderWidth * zoom;
         private static readonly int windowHeight = renderHeight * zoom;
@@ -55,8 +55,10 @@ namespace TimberDimmer
             graphics.GraphicsDevice.SamplerStates[0] = SamplerState.PointClamp;
             graphics.GraphicsDevice.RasterizerState = RasterizerState.CullNone;
 
+            spriteBatch.Begin(0, null, SamplerState.PointClamp);
             foreach (GameObject obj in Objects.List)
                 obj.Draw(gameTime, spriteBatch);    //No idea if this is in the correct spot
+            spriteBatch.End();
 
             graphics.GraphicsDevice.SetRenderTarget(null);
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/bg.png</File>
+    <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/fire.png</File>
+    <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/player.png</File>
+    <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/start.png</File>
+    <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/stop.png</File>
+    <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/tree.png</File>
+    <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/trunk.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
