@@ -20,7 +20,7 @@ namespace TimberDimmer
         {
             gridPosition = pos;
             position = pos * 32;
-            position.Y += 0.1f;
+            position.Y += 1;
             Game1.fireGrid[(int)gridPosition.X][(int)gridPosition.Y] = true;
             sprite = Game1.contentManager.Load<Texture2D>("fire");
             rect = new Rectangle(0, 0, 16, 24);

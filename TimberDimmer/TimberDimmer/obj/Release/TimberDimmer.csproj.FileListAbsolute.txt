@@ -23,3 +23,4 @@ H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\obj\
 H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\obj\Release\TimberDimmer.csproj.CopyComplete
 H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\obj\Release\TimberDimmer.exe
 H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\obj\Release\TimberDimmer.pdb
+H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\obj\Release\TimberDimmer.csprojAssemblyReference.cache
