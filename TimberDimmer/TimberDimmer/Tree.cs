@@ -15,6 +15,7 @@ namespace TimberDimmer
         public Tree(Vector2 pos)
         {
             position = pos;
+            position.Y += 0.95f;
             sprite = Game1.contentManager.Load<Texture2D>("tree");
         }
 

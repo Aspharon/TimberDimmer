@@ -68,7 +68,7 @@ namespace TimberDimmer
                 }
             }
 
-            Fire fire = new Fire(new Vector2(gridWidth / 2, gridHeight / 2));
+            Fire fire = new Fire(new Vector2(gridWidth / 2 + rand.Next(-3, 3), gridHeight / 2 + rand.Next(-3, 3)));
             Objects.List.Add(fire);
 
             Player player = new Player();
@@ -90,7 +90,7 @@ namespace TimberDimmer
         {
 
         }
-        
+
         /// <summary>
         /// Allows the game to run logic such as updating the world,
         /// checking for collisions, gathering input, and playing audio.
@@ -103,7 +103,7 @@ namespace TimberDimmer
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            
+
 
             // TODO: Add your update logic here
 
@@ -120,44 +120,48 @@ namespace TimberDimmer
             foreach (GameObject obj in Objects.RemoveList)
                 Objects.List.Remove(obj);
             Objects.RemoveList.Clear();
-            
-            if (gamestate == 0)
-            {
-                if (inputHelper.KeyPressed(Keys.Space))
-                {
-                    gamestate++;
-                    Objects.List.Clear();
-                    Start();
-                }
-            }
 
-            if (gamestate == 1)
+            switch (gamestate)
             {
-                bool contained = true;
-                foreach (Fire f in Objects.List.OfType<Fire>())
-                {
-                    if (f.neighbourList.Count != 0)
+                case 0:
+                    if (inputHelper.KeyPressed(Keys.Space))
                     {
-                        contained = false;
+                        gamestate++;
+                        Objects.List.Clear();
+                        Start();
                     }
-                }
-                if (contained)
-                {
-                    gamestate++;
-                    
-                    Objects.List.Clear();
-                    EndScreen endScreen = new EndScreen();
-                    Objects.List.Add(endScreen);
-                }
-            }
-            if (gamestate == 2)
-            {
-                if (inputHelper.KeyPressed(Keys.Space))
-                {
-                    gamestate--;
-                    Objects.List.Clear();
-                    Start();
-                }
+                    break;
+
+                case 1:
+                    bool contained = true;
+                    foreach (Fire f in Objects.List.OfType<Fire>())
+                    {
+                        if (f.neighbourList.Count != 0)
+                        {
+                            contained = false;
+                        }
+                    }
+                    if (contained)
+                    {
+                        gamestate++;
+
+                        int saved = 0;
+                        foreach (Tree tree in Objects.List.OfType<Tree>()) saved++;
+                        foreach (Fire fire in Objects.List.OfType<Fire>()) saved--;
+                        Objects.List.Clear();
+
+                        EndScreen endScreen = new EndScreen(saved);
+                        Objects.List.Add(endScreen);
+                    }
+                    break;
+                case 2:
+                    if (inputHelper.KeyPressed(Keys.Space))
+                    {
+                        gamestate--;
+                        Objects.List.Clear();
+                        Start();
+                    }
+                    break;
             }
 
             Objects.List.Sort((o1, o2) => o1.position.Y.CompareTo(o2.position.Y));

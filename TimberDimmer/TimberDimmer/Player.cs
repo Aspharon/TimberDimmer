@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 
 namespace TimberDimmer
 {
     class Player : GameObject
     {
         Texture2D sprite;
+        SoundEffect chop;
         Rectangle rect;
         SpriteEffects effects;
         int animationCounter, spriteCounter, animationSpeed = 5;
@@ -21,12 +23,13 @@ namespace TimberDimmer
         {
             position = new Vector2(48, 48);
             sprite = Game1.contentManager.Load<Texture2D>("player");
+            chop = Game1.contentManager.Load<SoundEffect>("chop");
             rect = new Rectangle(0, 0, 16, 32);
         }
 
         public override void HandleInput(InputHelper inputHelper)
         {
-            if (inputHelper.KeyDown(Keys.E))
+            if (inputHelper.KeyPressed(Keys.Space))
             {
                 swinging = true;
             }
@@ -61,6 +64,7 @@ namespace TimberDimmer
             {
                 if (animationCounter == 0 && spriteCounter == 0) //janky way to check if its the first swinging frame. Don't do this.
                 {
+                    chop.Play();
                     Tree closest = null;
                     float smallestDist = float.MaxValue;
                     foreach (Tree h in Objects.List.OfType<Tree>())

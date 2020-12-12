@@ -5,14 +5,20 @@
   <Config />
   <SourceFiles>
     <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/bg.png</File>
+    <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/chop.ogg</File>
     <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/fire.png</File>
+    <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/font.spritefont</File>
     <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/player.png</File>
+    <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/spread.wav</File>
     <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/start.png</File>
     <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/stop.png</File>
     <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/tree.png</File>
     <File>H:/UU/3-1 - Minor Game Design/Kernmodule 2/Game 6/TimberDimmer/TimberDimmer/Content/trunk.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

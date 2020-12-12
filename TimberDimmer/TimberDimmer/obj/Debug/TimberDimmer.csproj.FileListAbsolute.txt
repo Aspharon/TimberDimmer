@@ -24,3 +24,6 @@ H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\bin\
 H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\bin\DesktopGL\AnyCPU\Debug\Content\player.xnb
 H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\bin\DesktopGL\AnyCPU\Debug\Content\start.xnb
 H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\bin\DesktopGL\AnyCPU\Debug\Content\stop.xnb
+H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\bin\DesktopGL\AnyCPU\Debug\Content\font.xnb
+H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\bin\DesktopGL\AnyCPU\Debug\Content\chop.xnb
+H:\UU\3-1 - Minor Game Design\Kernmodule 2\Game 6\TimberDimmer\TimberDimmer\bin\DesktopGL\AnyCPU\Debug\Content\spread.xnb

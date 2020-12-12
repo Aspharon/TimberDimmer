@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Audio;
 
 namespace TimberDimmer
 {
@@ -12,9 +13,10 @@ namespace TimberDimmer
     {
         Texture2D sprite;
         Rectangle rect;
-        int animationCounter, spriteCounter, animationSpeed = 5, timer, spreadSpeed = 80;
+        int animationCounter, spriteCounter, animationSpeed = 5, timer, spreadSpeed = 60;
         Vector2 gridPosition;
         public List<Vector2> neighbourList;
+        SoundEffect spread;
 
         public Fire(Vector2 pos)
         {
@@ -23,6 +25,7 @@ namespace TimberDimmer
             position.Y += 1;
             Game1.fireGrid[(int)gridPosition.X][(int)gridPosition.Y] = true;
             sprite = Game1.contentManager.Load<Texture2D>("fire");
+            spread = Game1.contentManager.Load<SoundEffect>("spread");
             rect = new Rectangle(0, 0, 16, 24);
             neighbourList = new List<Vector2>();
         }
@@ -72,6 +75,7 @@ namespace TimberDimmer
                 {
                     Fire fire = new Fire(pos);
                     Objects.AddList.Add(fire);
+                    spread.Play();
                 }
             }
         }

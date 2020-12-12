@@ -25,6 +25,12 @@
 /processorParam:TextureFormat=Color
 /build:bg.png
 
+#begin chop.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:chop.ogg
+
 #begin fire.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -37,6 +43,13 @@
 /processorParam:TextureFormat=Color
 /build:fire.png
 
+#begin font.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:font.spritefont
+
 #begin player.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -48,6 +61,12 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:player.png
+
+#begin spread.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:spread.wav
 
 #begin start.png
 /importer:TextureImporter
